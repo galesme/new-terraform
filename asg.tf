@@ -12,7 +12,7 @@ resource "aws_launch_template" "Project-WebApp" {
       Name = "Apache-WebApp"
     }
   }
-  user_data = filebase64("apache.sh")
+  user_data = filebase64("boot.sh")
 }
 
 #auto scaling group to launch minimum of 2 instances and maximum of 3 instances
